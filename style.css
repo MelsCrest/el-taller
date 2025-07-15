@@ -1,0 +1,15 @@
+.header{
+  background-color: red;
+  height: 60px;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+}
+.main{
+  background-color: orange;
+  height: 100vh;
+}
+.footer{
+  background-color: blueviolet;
+  height: 40px;
+}
