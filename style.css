@@ -1,15 +1,132 @@
+body{
+  background-image: url(./images/bg-vector.svg);
+  
+}
 .header{
-  background-color: red;
-  height: 60px;
+  background-color: var(--background-color);
+  height: 95px;
+  width: 100%;
   position: fixed;
   z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.3s ease;
+}
+.logo{
+  width: 85%;
+  height: 95px;
+  object-position: -5px;
+  transition: height 0.3s ease;
+}
+.menu{
+  width: 15%;
+  display: flex;
+  justify-content: start;
+  padding-bottom: 20px;
+  transition: height 0.3s ease;
+}
+/*scroll*/
+.header-scroll{
+  background-color: var(--background-color);
+  height: 60px;
   width: 100%;
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-scroll{
+  width: 85%;
+  height: 55px;
+  object-position: -90px;
+}
+.menu-scroll{
+  width: 15%;
+  display: flex;
+  justify-content: start;
+  padding-bottom: 5px;
+}
+/*---------------------*/
+.menu img{
+  width: 25px;
 }
 .main{
   background-color: orange;
+  height: auto;
+  width: 100%;
+}
+.hero{
+  background-color: blue;
   height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.facade-img{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: 73%;  
+}
+.presentation{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(25, 25, 25, 0.55);
+  position: absolute;
+  top:0;
+  z-index: 10;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+h1{
+  font-size: 3.2rem;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  text-align: center;
+  color: var(--white);
+  line-height: 50px;
+  margin-top: 200px;
+}
+.intro{
+  font-size: 1.5rem;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  color: var(--white);
+  text-align: center;
+  line-height: 25px;
+  padding-bottom: 30px;
+}
+.hero-button{
+  padding: 20px 60px;
+  font-size: 1.5rem;
+  margin-top:20px;
+}
+.workshops{
+  background-color: yellow;
+  height: 600px;
+}
+.experience{
+  background-color: pink;
+  height: 300px;
 }
 .footer{
   background-color: blueviolet;
-  height: 40px;
+  height: 100px;
+}
+button{
+  background-color: var(--brand-color);
+  color: var(--white);
+  padding: 10px 24px;
+  border: none;
+  font-family: var(--button-text);
+  font-weight: bold;
+}
+button:hover{
+  cursor: pointer;
+  background-color: #0B1C1F;
 }

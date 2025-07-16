@@ -132,3 +132,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+:root{
+  font-size: 62.5%;
+  --primary-font:"Sour Gummy", sans-serif;
+  --secondary-font:"Open Sans", sans-serif;
+  --white:#ffffff;
+  --title-color:#111010;
+  --brand-color:#10292C;
+  --decoration-color:#C4C4C4;
+  --background-color:#FCF0E2;
+  --button-text:"Roboto Flex", sans-serif;
+}
