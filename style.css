@@ -28,30 +28,51 @@ body{
 }
 /*scroll*/
 .header-scroll{
-  background-color: var(--background-color);
   height: 60px;
-  width: 100%;
-  position: fixed;
-  z-index: 50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .logo-scroll{
-  width: 85%;
   height: 55px;
   object-position: -90px;
 }
 .menu-scroll{
-  width: 15%;
-  display: flex;
-  justify-content: start;
   padding-bottom: 5px;
 }
 /*---------------------*/
 .menu img{
   width: 25px;
 }
+/*Drop-down menu*/
+.dropdown-menu{
+  font-family: var(--primary-font);
+  font-weight: bold;
+  font-size: 1.2rem;
+  height: auto;
+  display: inline;
+  background-color: var(--background-color);
+  position: absolute;
+  top:95px;
+  right:0;
+  text-align: center;
+  transition: height 0.3s ease;
+}
+.dropdown-menu li{
+  padding: 10px 24px;
+  border-top: 1px solid var(--brand-color);
+}
+.dropdown-menu li a{
+  text-decoration: none;
+  color: #848484;
+}
+.dropdown-menu li a:hover{
+  color: #333333;
+}
+.hidden{
+  display: none;
+}
+.dropdown-scroll{
+  top: 60px;
+}
+/*--------------------*/
 .main{
   background-color: orange;
   height: auto;
@@ -118,6 +139,7 @@ h1{
   background-color: blueviolet;
   height: 100px;
 }
+/*buttons*/
 button{
   background-color: var(--brand-color);
   color: var(--white);
@@ -125,6 +147,7 @@ button{
   border: none;
   font-family: var(--button-text);
   font-weight: bold;
+  border-radius: 10px;
 }
 button:hover{
   cursor: pointer;
