@@ -276,7 +276,8 @@ p{
 }
 /* ---- FOOTER ---- */
 .footer{
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  background-color: #DEDEDE;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -311,6 +312,11 @@ p{
   text-decoration: none;
   color: black;
 }
+.instagram{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
 .instagram-logo{
   transform: translateY(3px);
 }
@@ -321,9 +327,13 @@ p{
 }
 .copyright p{
   font-size: 0.9rem;
+  color: #393939;
 }
-
-
+.developer{
+  text-decoration: none;
+  color: #393939;
+  font-weight: bold;
+}
 /*buttons*/
 button{
   background-color: var(--brand-color);
