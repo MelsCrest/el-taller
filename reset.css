@@ -135,7 +135,7 @@ table {
 :root{
   font-size: 62.5%;
   --primary-font:"Sour Gummy", sans-serif;
-  --secondary-font:"Open Sans", sans-serif;
+  --secondary-font:"Open Sans", sans-serif;--tertiary-font:"Poppins", sans-serif;
   --white:#ffffff;
   --title-color:#111010;
   --brand-color:#10292C;
