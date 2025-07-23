@@ -1,3 +1,13 @@
+/*
+salvar altura menú
+:root {
+  scroll-padding-top: 95px;
+}
+*/
+html {
+  scroll-behavior: smooth;
+} 
+
 body{
   background-image: url(./images/bg-vector.svg);
   
@@ -30,9 +40,13 @@ body{
 .header-scroll{
   height: 60px;
 }
-.logo-scroll{
+/* .logo-scroll{ //logo icono
   height: 55px;
   object-position: -90px;
+} */
+.logo-scroll{ 
+  height: 40px;
+  object-position: 10px;
 }
 .menu-scroll{
   padding-bottom: 5px;
@@ -127,7 +141,6 @@ h1{
 }
 .hero-intro{
   font-size: 1.5rem;
-  /* font-size: 1.3rem; - quitar */
   /* font-family: var(--secondary-font); */
   font-family: var(--tertiary-font);
   font-weight: 400;
@@ -144,8 +157,7 @@ h1{
   /*--WORKSHOPS--*/
 .workshops{
   /* background-color: yellow; */
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding: 55px 0 25px 0;
 }
 h2{
   font-family: var(--primary-font);
@@ -163,10 +175,18 @@ h3{
   /* font-family: var(--secondary-font); */
   font-family: var(--tertiary-font);
   font-size: 1.6rem;
-  /* font-size: 1.4rem; - quitar*/
   text-align: center;
   padding: 30px 0;
   line-height: 22px;
+}
+.article-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:40px;
+  padding: 0 20px;
 }
 .workshop-article{
   width: 100%;
@@ -175,7 +195,6 @@ h3{
   flex-direction: column;
   align-items: center;
   gap:15px;
-  padding-bottom: 50px;
 }
 .workshop-article img{
   width: 100%;
@@ -199,13 +218,12 @@ p{
   /* font-family: var(--secondary-font); */
   font-family: var(--tertiary-font);
   font-size: 1.5rem;
-  /*font-size: 1.3rem; - quitar*/
   line-height: 22px;
 }
 
   /*--EXPERIENCE--*/
 .experience{
-  padding: 0;  
+  padding:30px 0 25px 0; 
 }
 .article-box{
   width: 100%;
@@ -234,7 +252,7 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 55px 20px;
+  padding: 30px 0 25px 0;
 }
 .projects-gallery{
   width: 100%;
@@ -257,7 +275,7 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:0 0 55px 0;
+  padding:30px 0 55px 0; 
 }
 .img-aboutme{
   width: 100%;
@@ -278,12 +296,11 @@ p{
 .footer{
   /* background-color: var(--background-color); */
   background-color: #DEDEDE;
-  height: 100vh;
+  height: 860px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding-bottom: 55px;
 }
 .footer-logo{
   width: 100%;

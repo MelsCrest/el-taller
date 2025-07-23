@@ -25,13 +25,13 @@
     <nav class="menu js-menu">
       <img src="/images/menu.svg" alt="Icono menú">
       <ul class="dropdown-menu hidden">
-        <li><a href="#hero">INICIO</a></li>
-        <li><a href="#workshops">TALLERES</a></li>
-        <li><a href="#experience">EXPERIENCIAS</a></li>
-        <!-- <li><a href="#">TIENDA</a></li> -->
-        <li><a href="#projects">PROYECTOS</a></li>
-        <li><a href="#about-me">SOBRE MI</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#hero" class="scroll-link">INICIO</a></li>
+        <li><a href="#workshops" class="scroll-link">TALLERES</a></li>
+        <li><a href="#experience" class="scroll-link">EXPERIENCIAS</a></li>
+        <!-- <li><a href="#" class="scroll-link">TIENDA</a></li> -->
+        <li><a href="#projects" class="scroll-link">PROYECTOS</a></li>
+        <li><a href="#about-me" class="scroll-link">SOBRE MI</a></li>
+        <li><a href="#contact" class="scroll-link">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -42,7 +42,7 @@
       <div class="hero-text-container">
         <h1>La magia de crear con tus manos</h1>
         <p class="hero-intro">Déjate llevar por la creatividad, explora y descubre la magia de crear con tus manos cosas auténticas y únicas.</p>
-        <button class="hero-button">DESCUBRE MÁS</button>
+        <button class="hero-button" id="scrollToWorkshop">DESCUBRE MÁS</button>
       </div>
     </section>
     <!--WORKSHOPS-->
@@ -50,38 +50,40 @@
       <h2>Talleres</h2>
       <hr class="decoration"/>
       <h3>No te pierdas nuestros talleres y explora tu lado artístico. Disfruta de esta experiencia también en familia o con amig@s.</h3>
-      <article class="workshop-article">
-        <img src="./images/workshops/pexels-kampus-6023602.jpg" alt="persona moldeando pieza de arcilla blanca sobre una tabla de madera"/>
-        <div class="text-container">
-          <h2>Clases</h2>
-          <p>Cerámica, pintura o torno. ¡Atrévete a descubrir al artista que llevas dentro!</p>
-        </div>
-        <button>LEER MÁS</button>
-      </article>
-      <article class="workshop-article">
-        <img src="./images/workshops/pexels-asadphoto-30225360.jpg" alt="taller de pintura de cerámica en familia"/>
-        <div class="text-container">
-          <h2>Fin de semana</h2>
-          <p>Cumpleaños, meriendas con amigos, días especiales... Ven a celebrarlo con nosotras.</p>
-        </div>
-        <button>LEER MÁS</button>
-      </article>
-      <article class="workshop-article">
-        <img src="./images/workshops/pexels-pavel-danilyuk-8422175.jpg" alt="niños haciendo manualidades alrededor de una mesa"/>
-        <div class="text-container">
-          <h2>Campamentos</h2>
-          <p>Días llenos de actividades y juegos para los peques. ¡Se lo pasarán genial!</p>
-        </div>
-        <button>LEER MÁS</button>
-      </article>
-      <article class="workshop-article">
-        <img src="./images/workshops/pexels-fauxels-3184423.jpg" alt="grupo de personas en circulo juntado las manos al centro"/>
-        <div class="text-container">
-          <h2>Team building</h2>
-          <p>Desconectad de las horas de trabajo y relajaros con nuestros talleres.</p>
-        </div>
-        <button>LEER MÁS</button>
-      </article>
+      <div class="article-container">
+        <article class="workshop-article">
+          <img src="./images/workshops/pexels-kampus-6023602.jpg" alt="persona moldeando pieza de arcilla blanca sobre una tabla de madera"/>
+          <div class="text-container">
+            <h2>Clases</h2>
+            <p>Cerámica, pintura o torno. ¡Atrévete a descubrir al artista que llevas dentro!</p>
+          </div>
+          <button>LEER MÁS</button>
+        </article>
+        <article class="workshop-article">
+          <img src="./images/workshops/pexels-asadphoto-30225360.jpg" alt="taller de pintura de cerámica en familia"/>
+          <div class="text-container">
+            <h2>Fin de semana</h2>
+            <p>Cumpleaños, meriendas con amigos, días especiales... Ven a celebrarlo con nosotras.</p>
+          </div>
+          <button>LEER MÁS</button>
+        </article>
+        <article class="workshop-article">
+          <img src="./images/workshops/pexels-pavel-danilyuk-8422175.jpg" alt="niños haciendo manualidades alrededor de una mesa"/>
+          <div class="text-container">
+            <h2>Campamentos</h2>
+            <p>Días llenos de actividades y juegos para los peques. ¡Se lo pasarán genial!</p>
+          </div>
+          <button>LEER MÁS</button>
+        </article>
+        <article class="workshop-article">
+          <img src="./images/workshops/pexels-fauxels-3184423.jpg" alt="grupo de personas en circulo juntado las manos al centro"/>
+          <div class="text-container">
+            <h2>Team building</h2>
+            <p>Desconectad de las horas de trabajo y relajaros con nuestros talleres.</p>
+          </div>
+          <button>LEER MÁS</button>
+        </article>
+      </div>
     </section>
     <!--EXPERIENCE-->
     <section class="experience" id="experience">
@@ -125,7 +127,7 @@
           <img src="./images/about-me/covi.jpg" alt="Foto de Covadonga">
         </div>
       </article>
-      <button class="contact-button">CONTACTO</button>
+      <button class="contact-button" id="scrollToFooter">CONTACTO</button>
     </section>
   </main>
   <footer class="footer" id="contact">
