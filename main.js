@@ -11,7 +11,6 @@ window.addEventListener('scroll', ()=>{
   if(window.scrollY > heroHeight){
     header.classList.add('header-scroll');
     logo.classList.add('logo-scroll');
-    // logo.setAttribute('src','/images/logo3-VEC.svg');
     logo.setAttribute('src','/images/logoletrasvec.svg');
     menu.classList.add('menu-scroll');
     dropDownMenu.classList.add('dropdown-scroll');
@@ -58,13 +57,13 @@ document.querySelectorAll('.scroll-link').forEach(link => {
 // document.getElementById('scrollToWorkshop').addEventListener('click',()=>{
 //   document.getElementById('workshops').scrollIntoView({behavior:'smooth'});
 // });
-
 document.getElementById('scrollToWorkshop').addEventListener('click', function() {
   const workshops = document.getElementById('workshops');
   const headerHeight = 95;
   const yOffset = workshops.getBoundingClientRect().top + window.pageYOffset - headerHeight;
   window.scrollTo({ top: yOffset, behavior: 'smooth' });
 });
+
 //botón CONTACTO
 document.getElementById('scrollToFooter').addEventListener('click',()=>{
   document.getElementById('contact').scrollIntoView({behavior:'smooth'});

@@ -40,10 +40,6 @@ body{
 .header-scroll{
   height: 60px;
 }
-/* .logo-scroll{ //logo icono
-  height: 55px;
-  object-position: -90px;
-} */
 .logo-scroll{ 
   height: 40px;
   object-position: 10px;
@@ -55,6 +51,31 @@ body{
 .menu img{
   width: 25px;
 }
+/*media queries*/
+@media (width>767px) {
+  .header{
+    height: 120px;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .logo{
+    height: 125px;
+  }
+  .menu{
+    width: 15%;
+    padding-bottom: 15px;
+  }
+  .menu img{
+    width: 35px;
+  }
+  .header-scroll{
+    height: 95px;
+  }
+  .logo-scroll{
+    height: 65px;
+    object-position: 10px;
+  }
+}
 /*Drop-down menu*/
 .dropdown-menu{
   font-family: var(--primary-font);
@@ -63,7 +84,6 @@ body{
   height: auto;
   width: 100vw;
   display: inline;
-  /* background-color: var(--background-color); */
   background-color: var(--white);
   position: absolute;
   top:95px;
@@ -258,12 +278,13 @@ p{
 }
 .projects-gallery{
   width: 100%;
-  height: auto;
+  height: 1248px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   padding-bottom: 30px;
+  overflow: hidden;
 }
 .projects-gallery img{
   background-color: pink;
