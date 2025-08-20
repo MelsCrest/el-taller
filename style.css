@@ -51,15 +51,14 @@ body{
 .menu img{
   width: 25px;
 }
-/*media queries*/
+/*media queries - header*/
 @media (width>767px) {
   .header{
     height: 120px;
     justify-content: space-between;
-    overflow: hidden;
   }
   .logo{
-    height: 125px;
+    height: 120px;
   }
   .menu{
     width: 15%;
@@ -107,6 +106,12 @@ body{
 }
 .dropdown-scroll{
   top: 60px;
+}
+/*media queries - dropdown menu*/
+@media (width>767px){
+  .dropdown-menu{
+    top:120px;
+  }
 }
 /*--------------------*/
 /* ---- MAIN ---- */
