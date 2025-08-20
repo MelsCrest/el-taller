@@ -6,7 +6,7 @@ const hero = document.getElementById('hero');
 const heroHeight = hero.offsetHeight;
 const dropDownMenu = document.querySelector('.dropdown-menu');
 
-/*menu - scroll*/
+/*menu - scroll - change of img & height*/
 window.addEventListener('scroll', ()=>{
   if(window.scrollY > heroHeight){
     header.classList.add('header-scroll');
@@ -22,27 +22,26 @@ window.addEventListener('scroll', ()=>{
     dropDownMenu.classList.remove('dropdown-scroll');
   }
 });
-
 /*menu - drop-down*/
 menu.addEventListener('click', ()=>{
   dropDownMenu.classList.toggle('hidden');
 });
 
-/*salvar altura menú*/
+/*save height menu*/
 document.querySelectorAll('.scroll-link').forEach(link => {
   link.addEventListener('click', function (e) {
-    e.preventDefault(); // Prevenir comportamiento por defecto
+    e.preventDefault();
 
     const targetId = this.getAttribute('href').slice(1);
     const targetSection = document.getElementById(targetId);
 
-    // Detectar altura actual del header (por si cambia)
-    const currentHeaderHeight = header.offsetHeight;
+    // Detect current header height (in case it changes)
+    let currentHeaderHeight = header.offsetHeight;
 
-    // Obtener posición superior del destino
+    // Obtain superior position of destination
     const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
 
-    // Scroll a la posición ajustada
+    // Scroll to the set position
     window.scrollTo({
       top: targetPosition - currentHeaderHeight,
       behavior: 'smooth'
@@ -53,7 +52,7 @@ document.querySelectorAll('.scroll-link').forEach(link => {
   });
 });
 
-//botón DESCUBRE MÁS
+// DESCUBRE MÁS button
 // document.getElementById('scrollToWorkshop').addEventListener('click',()=>{
 //   document.getElementById('workshops').scrollIntoView({behavior:'smooth'});
 // });
@@ -64,7 +63,7 @@ document.getElementById('scrollToWorkshop').addEventListener('click', function()
   window.scrollTo({ top: yOffset, behavior: 'smooth' });
 });
 
-//botón CONTACTO
+// CONTACTO button
 document.getElementById('scrollToFooter').addEventListener('click',()=>{
   document.getElementById('contact').scrollIntoView({behavior:'smooth'});
 });

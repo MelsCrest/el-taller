@@ -7,10 +7,8 @@ salvar altura menú
 html {
   scroll-behavior: smooth;
 } 
-
 body{
   background-image: url(./images/bg-vector.svg);
-  
 }
 .header{
   background-color: var(--background-color);
@@ -75,6 +73,31 @@ body{
     object-position: 10px;
   }
 }
+@media (width>1023px) {
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+  }
+  .logo{
+    /* width: 29%; */
+    width: 296px;
+    object-position:0;
+  }
+  .menu{
+    /* width: 60%; */
+    width: 613px;
+    transition: none;
+    padding-bottom: 0;
+  }
+
+  .menu img{
+    display: none;
+  }
+  
+}
 /*Drop-down menu*/
 .dropdown-menu{
   font-family: var(--primary-font);
@@ -111,6 +134,20 @@ body{
 @media (width>767px){
   .dropdown-menu{
     top:120px;
+  }
+}
+@media (width>1023px){
+  .dropdown-menu{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top:0;
+    right: 0;
+    background-color: transparent;
+  }
+  .dropdown-menu li{
+    border: 0;
+    padding: 20px 15px;
   }
 }
 /*--------------------*/
@@ -248,6 +285,19 @@ p{
   line-height: 22px;
 }
 
+/*media queries - workshops section*/
+@media (width>767px){
+  .article-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .workshop-article{
+    width: 47%;
+  }
+}
+
   /*--EXPERIENCE--*/
 .experience{
   padding:30px 0 25px 0; 
@@ -283,7 +333,7 @@ p{
 }
 .projects-gallery{
   width: 100%;
-  height: 1248px;
+  height: 1248px;/*cambiar a auto cuando se haga la llamada a api*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -300,6 +350,21 @@ p{
   text-decoration: none;
   color: var(--white);
 }
+
+/*media queries - projects section*/
+@media (width>767px){
+  .projects-gallery{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 504px;/*eliminar cuando se haga el js y la llamada a la api*/
+  }
+  .projects-gallery img{
+    width: 220px;
+    height: 220px;
+  }
+}
+
   /*--ABOUT ME--*/
 .about-me{
   /* background-color: rgb(159, 240, 150); */
@@ -338,7 +403,16 @@ p{
   width: 100%;
   padding: 20px 6px 0px 6px;
 }
+.footer-section{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
 .footer-sections{
+  display: flex;
+  flex-direction: column;
   align-items: start;
   padding: 0 20px;
 }
@@ -356,7 +430,6 @@ p{
   line-height: 2rem;
   padding-top:3px;
 }
-
 .links{
   text-decoration: none;
   color: #494949;
@@ -378,6 +451,31 @@ p{
   text-decoration: none;
   color: #393939;
   font-weight: bold;
+}
+/*media queries - footer*/
+@media (width>767px){
+  .footer-logo{
+    width: 75%;
+  }
+  .footer-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:20px;
+  }
+  .footer-sections{
+    width: 30%;
+    padding-left: 32px;
+  }
+  .copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 55px;
+    width: 100%;
+  }
 }
 /*buttons*/
 button{
