@@ -50,6 +50,7 @@ body{
   width: 25px;
 }
 /*media queries - header*/
+/*tablet*/
 @media (width>767px) {
   .header{
     height: 120px;
@@ -73,6 +74,7 @@ body{
     object-position: 10px;
   }
 }
+/*desktop*/
 @media (width>1023px) {
   .header{
     display: flex;
@@ -130,11 +132,13 @@ body{
   top: 60px;
 }
 /*media queries - dropdown menu*/
+/*tablet*/
 @media (width>767px){
   .dropdown-menu{
     top:120px;
   }
 }
+/*desktop*/
 @media (width>1023px){
   .dropdown-menu{
     display: flex;
@@ -156,6 +160,7 @@ body{
   height: auto;
   width: 100%;
 }
+
   /*--SECTIONS--*/
 section{
   width: 100%;
@@ -165,6 +170,7 @@ section{
   align-items: center;
   padding: 0 20px;
 }
+
   /*--HERO--*/
 .hero{
   /* background-color: blue; */
@@ -217,6 +223,7 @@ h1{
   border-radius: 10px;
 }
 /*media queries - hero*/
+/*desktop*/
 @media (width>1023px){
   .hero{
     height: 470px;    
@@ -244,6 +251,7 @@ h1{
     display: none;
   }
 }
+
   /*--WORKSHOPS--*/
 .workshops{
   padding: 55px 0 25px 0;
@@ -309,6 +317,7 @@ p{
 }
 
 /*media queries - workshops section*/
+/*tablet*/
 @media (width>767px){
   .article-container{
     flex-direction: row;
@@ -320,6 +329,7 @@ p{
     width: 47%;
   }
 }
+/*desktop*/
 @media (width>1023px){
   .section-subtitles{
     width: 700px;
@@ -335,12 +345,8 @@ p{
     width: 23%;
     align-items: flex-start;
     justify-content: space-between;
-    /* height: 475px; */
-    /* height: 463px;
-    gap: 10px; */
   }
   .text-container{
-    /* height: 130px; */
     padding-right: 20px;
   }
   .workshop-article button{
@@ -348,7 +354,6 @@ p{
   }
   
 }
-
 
   /*--EXPERIENCE--*/
 .experience{
@@ -362,9 +367,12 @@ p{
   align-items: center;
   padding-top:30px;
 }
-.article-box img{
+.exp-img{
   width: 100%;
   height: auto;
+}
+.exp-img-xl{
+  display: none;
 }
 .bg-text-container{
   padding: 20px;
@@ -372,6 +380,36 @@ p{
 }
 .experience-button{
   margin-top: 10px;
+}
+/*media query - experience*/
+@media (width>1023px){
+  .article-box{
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+  .exp-img{
+    display: none;
+  }
+  .exp-img-xl{
+    display: block;
+    width: 750px;
+    object-fit: cover;
+    height: 320px;
+    background-color: red;
+    order: 2;
+    transform: translateX(50px);
+  }
+  .bg-text-container{
+    order: 1;
+    width: 435px;
+    position: absolute;
+    z-index: 50;
+    transform: translateX(-190px);
+  }
+  .experience-button{
+    width: 151px;
+  }
 }
 
   /*--PROJECTS--*/
