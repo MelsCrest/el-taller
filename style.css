@@ -92,7 +92,6 @@ body{
     transition: none;
     padding-bottom: 0;
   }
-
   .menu img{
     display: none;
   }
@@ -205,7 +204,6 @@ h1{
 }
 .hero-intro{
   font-size: 1.5rem;
-  /* font-family: var(--secondary-font); */
   font-family: var(--tertiary-font);
   font-weight: 400;
   color: var(--white);
@@ -218,9 +216,36 @@ h1{
   font-size: 1.5rem;
   border-radius: 10px;
 }
+/*media queries - hero*/
+@media (width>1023px){
+  .hero{
+    height: 470px;    
+  }
+  .hero-img{
+    height: 470px;  
+  }
+  .hero-text-container{
+    height: 470px;  
+    align-items: flex-start;
+    padding: 0 60px;
+    gap: 15px;
+  }
+  h1{
+    font-size: 3.8rem;
+    width: 400px;
+    text-align: left;
+  }
+  .hero-intro{
+    text-align: left;
+    width: 395px;
+    padding-bottom: 0px;
+  }
+  .hero-button{
+    display: none;
+  }
+}
   /*--WORKSHOPS--*/
 .workshops{
-  /* background-color: yellow; */
   padding: 55px 0 25px 0;
 }
 h2{
@@ -236,7 +261,6 @@ h2{
   border: none;
 }
 h3{
-  /* font-family: var(--secondary-font); */
   font-family: var(--tertiary-font);
   font-size: 1.6rem;
   text-align: center;
@@ -279,7 +303,6 @@ h3{
   font-size: 2.1rem;
 }
 p{
-  /* font-family: var(--secondary-font); */
   font-family: var(--tertiary-font);
   font-size: 1.5rem;
   line-height: 22px;
@@ -291,12 +314,41 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
   }
   .workshop-article{
     width: 47%;
   }
 }
+@media (width>1023px){
+  .section-subtitles{
+    width: 700px;
+    padding: 30px 0px;
+  }
+  .article-container{
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .workshop-article{
+    width: 23%;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* height: 475px; */
+    /* height: 463px;
+    gap: 10px; */
+  }
+  .text-container{
+    /* height: 130px; */
+    padding-right: 20px;
+  }
+  .workshop-article button{
+    margin-left: 10px;
+  }
+  
+}
+
 
   /*--EXPERIENCE--*/
 .experience{
