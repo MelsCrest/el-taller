@@ -21,11 +21,14 @@ body{
   align-items: center;
   transition: height 0.3s ease;
 }
+.logo-link{
+  width: 100%;
+}
 .logo{
   width: 85%;
   height: 95px;
-  object-position: -5px;
   transition: height 0.3s ease;
+  object-position: 15px;
 }
 .menu{
   width: 15%;
@@ -40,7 +43,7 @@ body{
 }
 .logo-scroll{ 
   height: 40px;
-  object-position: 10px;
+  object-position: 25px;
 }
 .menu-scroll{
   padding-bottom: 5px;
@@ -71,7 +74,7 @@ body{
   }
   .logo-scroll{
     height: 65px;
-    object-position: 10px;
+    object-position: 50px;
   }
 }
 /*desktop*/
@@ -234,7 +237,7 @@ h1{
   .hero-text-container{
     height: 470px;  
     align-items: flex-start;
-    padding: 0 60px;
+    padding: 0 80px;
     gap: 15px;
   }
   h1{
@@ -384,6 +387,7 @@ p{
   margin-top: 10px;
 }
 /*media query - experience*/
+/*desktop*/
 @media (width>1023px){
   .title-exp{
     display: none;
@@ -418,7 +422,8 @@ p{
     z-index: 50;
     /* transform: translateX(-190px); */
     transform: translateX(-280px);
-    padding: 80px 50px;
+    /* padding: 80px 50px; */
+    padding: 73px 75px;
   }
   .bg-text-container-exp h2{
     font-size: 3rem;
@@ -518,27 +523,38 @@ p{
 /*desktop*/
 @media (width>1023px){
   .bg-text-container-about{
-    background-color: red;
     order: 2;
+    position: absolute;
+    z-index: 50;
+    width: 500px;
+    height: 400px;
+    /* transform: translateX(260px); */
+    transform: translateX(295px);
+    padding: 69px 65px;
   }
   .img-aboutme{
     width: 100%;
     height: 500px;
+    width: 650px;
     overflow: hidden;
-    background-color: blue;
     order: 1;
+    /* transform: translateX(-185px); */
+    transform: translateX(-225px);
   }
   .title-about, .decoration{
     display: none;
   }
-  .subtitle-about{
+  .bg-text-container-about .subtitle-about{
     display: inline;
+    font-size: 3rem;
+    padding-bottom: 15px;
   }
   .contact-btn-sm{
     display: none;
   }
   .contact-btn-xl{
     display: inline-block;
+    width: 150px;
   }
 }
 /* ---- FOOTER ---- */
