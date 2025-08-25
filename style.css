@@ -334,6 +334,9 @@ p{
 }
 /*desktop*/
 @media (width>1023px){
+  .workshops{
+  padding: 40px 0 87px 0;
+}
   .section-subtitles{
     width: 700px;
     padding: 30px 0px;
@@ -389,6 +392,9 @@ p{
 /*media query - experience*/
 /*desktop*/
 @media (width>1023px){
+  .experience{
+    padding:30px 0 87px 0; 
+  }
   .title-exp{
     display: none;
   }
@@ -436,7 +442,6 @@ p{
 
   /*--PROJECTS--*/
 .projects{
-  /* background-color: rgb(112, 183, 249); */
   height: auto;
   display: flex;
   flex-direction: column;
@@ -478,16 +483,18 @@ p{
   }
 }
 /*desktop*/
+@media (width>1023px){
+  .projects{
+    padding: 30px 0 87px 0;
+  }
+}
 @media (width>1279px){
   .projects-gallery{
     height: auto;
-    /* gap: 15px; */
   }
   .projects-gallery img{
     width: 233px;
     height: 233px;
-    /* width: 244px;
-    height: 244px; */
   }
 }
 
@@ -522,6 +529,9 @@ p{
 /*media queries - about me section*/
 /*desktop*/
 @media (width>1023px){
+  .about-me{
+    padding:30px 0 130px 0; 
+  }
   .bg-text-container-about{
     order: 2;
     position: absolute;
@@ -587,13 +597,11 @@ p{
 .footer-sections h3{
   padding: 15px 0px;
   font-size: 1.4rem;
-  /* font-family: var(--secondary-font); */
   font-family: var(--tertiary-font);
   font-weight: bold;
 }
 .footer-sections li{
   font-size: 1.4rem;
-  /* font-family: var(--secondary-font); */
   font-family: var(--tertiary-font);
   line-height: 2rem;
   padding-top:3px;
@@ -621,6 +629,7 @@ p{
   font-weight: bold;
 }
 /*media queries - footer*/
+/*tablet*/
 @media (width>767px){
   .footer-logo{
     width: 75%;
@@ -636,6 +645,9 @@ p{
     width: 30%;
     padding-left: 32px;
   }
+  .footer-sections ul{
+    width: 175px;
+  }
   .copyright{
     display: flex;
     flex-direction: row;
@@ -645,6 +657,35 @@ p{
     width: 100%;
   }
 }
+/*desktop*/
+@media (width>1023px){
+  .footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    height: auto;   
+    padding: 50px 0px; 
+  }
+  .footer-logo{
+    margin: 0 25px;
+    width: 25%;
+  }
+  .footer-section{
+    width: 70%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer-sections{
+    width: 25%;
+    padding: 0;
+  }
+  .copyright{
+    padding-top: 60px;
+  }
+}
+
+/*---------------*/
 /*buttons*/
 button{
   background-color: var(--brand-color);
