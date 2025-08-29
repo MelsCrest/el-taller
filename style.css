@@ -393,7 +393,8 @@ p{
 /*desktop*/
 @media (width>1023px){
   .experience{
-    padding:30px 0 87px 0; 
+    /* padding:30px 0 87px 0;  */
+    padding:85px 0 135px 0; /*prueba*/ 
   }
   .title-exp{
     display: none;
@@ -403,6 +404,7 @@ p{
     justify-content: center;
     position: relative;
     overflow: hidden;
+    height: 450px;/*prueba*/
   }
   .exp-img{
     display: none;
@@ -416,7 +418,6 @@ p{
     object-fit: cover;
     background-color: red;
     order: 2;
-    /* transform: translateX(50px); */
     transform: translateX(50px);
   }
   .bg-text-container-exp{
@@ -485,7 +486,8 @@ p{
 /*desktop*/
 @media (width>1023px){
   .projects{
-    padding: 30px 0 87px 0;
+    /* padding: 30px 0 87px 0; */
+    padding: 15px 0 87px 0;/*prueba*/
   }
 }
 @media (width>1279px){
@@ -530,7 +532,12 @@ p{
 /*desktop*/
 @media (width>1023px){
   .about-me{
-    padding:30px 0 130px 0; 
+    /* padding:30px 0 130px 0;  */
+    padding: 85px 0 100px 0; /*prueba*/ 
+  }
+  .about-me .article-box{ /*prueba*/
+    height: auto;
+    padding-top: 0;
   }
   .bg-text-container-about{
     order: 2;
@@ -580,6 +587,9 @@ p{
 .footer-logo{
   width: 100%;
   padding: 20px 6px 0px 6px;
+} 
+.footer-logo img{
+  width: 100%;
 }
 .footer-section{
   width: 100%;
@@ -634,6 +644,9 @@ p{
   .footer-logo{
     width: 75%;
   }
+  .footer-logo img{
+    width: 100%;
+  }
   .footer-section{
     display: flex;
     flex-direction: row;
@@ -670,6 +683,9 @@ p{
   .footer-logo{
     margin: 0 25px;
     width: 25%;
+  }
+  .footer-logo img{
+    width: 100%;
   }
   .footer-section{
     width: 70%;
