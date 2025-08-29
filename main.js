@@ -67,3 +67,23 @@ document.getElementById('scrollToWorkshop').addEventListener('click', function()
 document.getElementById('scrollToFooter').addEventListener('click',()=>{
   document.getElementById('contact').scrollIntoView({behavior:'smooth'});
 });
+
+// MODAL BOX - Workshops info
+let modal = document.getElementById("js-modal");
+let classesBtn = document.getElementById("js-classesBtn");
+let closeBtn = document.querySelector(".js-close")[0];
+
+classesBtn.addEventListener('click', ()=>{
+  modal.style.display = "block";
+});
+
+closeBtn.addEventListener('click', ()=>{
+  modal.style.display = "none";
+});
+
+window.addEventListener('click', (e)=>{
+  if(e.target === modal){
+    modal.style.display = "none";
+  }
+});
+
