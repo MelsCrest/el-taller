@@ -16,7 +16,7 @@ window.addEventListener('scroll', ()=>{
     dropDownMenu.classList.add('dropdown-scroll');
   }else{
     header.classList.remove('header-scroll');
-    logo.setAttribute('src','/images/logo1vec.svg');
+    logo.setAttribute('src','/images/logo1vec-sin-bg.svg');
     logo.classList.remove('logo-scroll');
     menu.classList.remove('menu-scroll');
     dropDownMenu.classList.remove('dropdown-scroll');
