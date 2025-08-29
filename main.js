@@ -69,9 +69,9 @@ document.getElementById('scrollToFooter').addEventListener('click',()=>{
 });
 
 // MODAL BOX - Workshops info
-let modal = document.getElementById("js-modal");
-let classesBtn = document.getElementById("js-classesBtn");
-let closeBtn = document.querySelector(".js-close")[0];
+const modal = document.getElementById("js-modal");
+const classesBtn = document.getElementById("js-classesBtn");
+const closeBtn = document.getElementsByClassName("js-close")[0];
 
 classesBtn.addEventListener('click', ()=>{
   modal.style.display = "block";
@@ -86,4 +86,48 @@ window.addEventListener('click', (e)=>{
     modal.style.display = "none";
   }
 });
+/* brief */
+// classesBtn.onclick = function() {
+//   modal.style.display = "block";
+// }
 
+// // When the user clicks on <span> (x), close the modal
+// closeBtn.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+
+const downArrow = document.querySelector('.down');
+const painting = document.getElementById("painting");
+const pottery = document.getElementById("pottery");
+const children = document.getElementById("children");
+const paintArticle = document.querySelector('.paint-article');
+const potteryArticle = document.querySelector('.pottery-article');
+const childrenArticle = document.querySelector('.children-article');
+const closeModal = document.querySelector('.close-modal');
+
+
+painting.addEventListener('click', ()=>{
+  downArrow.classList.toggle('down');
+  paintArticle.classList.toggle('hidden');
+});
+
+pottery.addEventListener('click', ()=>{
+  downArrow.classList.toggle('down');
+  potteryArticle.classList.toggle('hidden');
+});
+
+children.addEventListener('click', ()=>{
+  downArrow.classList.toggle('down');
+  childrenArticle.classList.toggle('hidden');
+});
+
+closeModal.addEventListener('click', ()=>{
+  modal.style.display = "none";
+});

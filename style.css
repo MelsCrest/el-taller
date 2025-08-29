@@ -407,6 +407,20 @@ p{
   border: 1px solid #888;
   width: 80%;
 }
+/* Content */
+.class-name:hover, .class-name:focus{
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+span{
+  display: inline-block;
+  transform: rotate(90deg);
+}
+.down{
+  transform: rotate(0deg);
+}
 
 /* The Close Button */
 .js-close {
@@ -416,8 +430,8 @@ p{
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.js-close:hover,
+.js-close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
