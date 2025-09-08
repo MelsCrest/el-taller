@@ -104,6 +104,8 @@ window.addEventListener('click', (e)=>{
 // }
 
 const downArrow = document.querySelector('.down');
+const downArrowPo = document.querySelector('.down-po');
+const downArrowCh = document.querySelector('.down-ch');
 const painting = document.getElementById("painting");
 const pottery = document.getElementById("pottery");
 const children = document.getElementById("children");
@@ -119,12 +121,12 @@ painting.addEventListener('click', ()=>{
 });
 
 pottery.addEventListener('click', ()=>{
-  downArrow.classList.toggle('down');
+  downArrowPo.classList.toggle('down-po');
   potteryArticle.classList.toggle('hidden');
 });
 
 children.addEventListener('click', ()=>{
-  downArrow.classList.toggle('down');
+  downArrowCh.classList.toggle('down-ch');
   childrenArticle.classList.toggle('hidden');
 });
 

@@ -408,7 +408,7 @@ p{
   width: 80%;
 }
 /* Content */
-.class-name:hover, .class-name:focus{
+.js-class-name:hover, .js-class-name:focus{
   color: var(--title-color);
   font-weight: 500;
   font-size: 1.7rem;
@@ -418,10 +418,23 @@ span{
   display: inline-block;
   transform: rotate(90deg);
 }
-.down{
+.down, .down-po, .down-ch{
   transform: rotate(0deg);
 }
-
+.paint-article, .pottery-article, .children-article{
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 70%;
+}
+.title-classes-article{
+  text-align: left;
+  font-weight: 500;
+  padding: 0px 0px 15px 0px;
+}
+.schedule{
+  padding-top: 20px;
+  font-weight: 500;
+}
 /* The Close Button */
 .js-close {
   color: #aaaaaa;
@@ -436,6 +449,7 @@ span{
   text-decoration: none;
   cursor: pointer;
 }
+/*---------------*/
 
   /*--EXPERIENCE--*/
 .experience{
