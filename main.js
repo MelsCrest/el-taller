@@ -71,65 +71,54 @@ document.getElementById('scrollToFooter').addEventListener('click',()=>{
 // MODAL BOX - Workshops info
 const modal = document.getElementById("js-modal");
 const classesBtn = document.getElementById("js-classesBtn");
+const workshopsBtn = document.getElementById("js-workshopsBtn");
 const closeBtn = document.getElementsByClassName("js-close")[0];
-
-classesBtn.addEventListener('click', ()=>{
-  modal.style.display = "block";
-});
-
-closeBtn.addEventListener('click', ()=>{
-  modal.style.display = "none";
-});
-
-window.addEventListener('click', (e)=>{
-  if(e.target === modal){
-    modal.style.display = "none";
-  }
-});
-/* brief */
-// classesBtn.onclick = function() {
-//   modal.style.display = "block";
-// }
-
-// // When the user clicks on <span> (x), close the modal
-// closeBtn.onclick = function() {
-//   modal.style.display = "none";
-// }
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
-
-const downArrow = document.querySelector('.down');
-const downArrowPo = document.querySelector('.down-po');
-const downArrowCh = document.querySelector('.down-ch');
-const painting = document.getElementById("painting");
-const pottery = document.getElementById("pottery");
-const children = document.getElementById("children");
-const paintArticle = document.querySelector('.paint-article');
-const potteryArticle = document.querySelector('.pottery-article');
-const childrenArticle = document.querySelector('.children-article');
 const closeModal = document.querySelector('.close-modal');
 
-
-painting.addEventListener('click', ()=>{
-  downArrow.classList.toggle('down');
-  paintArticle.classList.toggle('hidden');
+/*LEER MÁS buttons*/
+document.querySelectorAll('.js-readmore-btn').forEach(button =>{
+  button.addEventListener('click', ()=>{
+    const modalId = button.getAttribute('data-modal');
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.style.display = "block";
+    }
+  });
 });
 
-pottery.addEventListener('click', ()=>{
-  downArrowPo.classList.toggle('down-po');
-  potteryArticle.classList.toggle('hidden');
+/*Drop-down article*/
+document.querySelectorAll('.js-class-name').forEach(header =>{
+  header.addEventListener('click', ()=>{
+    const targetClass = header.getAttribute('data-target');
+    const article = document.querySelector(`.${targetClass}`);
+    const arrow = header.querySelector('.arrow');
+
+    article.classList.toggle('hidden');
+    arrow.classList.toggle('rotated');
+  })
+})
+
+// /*Close Modal*/
+// closeModal.addEventListener('click', ()=>{
+//   modal.style.display = "none";
+// });
+document.querySelectorAll('.js-close').forEach(closeBtn => {
+  closeBtn.addEventListener('click', () => {
+    const modal = closeBtn.closest('.modal');
+    if (modal) {
+      modal.style.display = "none";
+    }
+  });
 });
 
-children.addEventListener('click', ()=>{
-  downArrowCh.classList.toggle('down-ch');
-  childrenArticle.classList.toggle('hidden');
-});
-
-closeModal.addEventListener('click', ()=>{
-  modal.style.display = "none";
+// When the user clicks anywhere outside of the modal, close it
+// window.addEventListener('click', (e)=>{
+//   if(e.target === modal){
+//     modal.style.display = "none";
+//   }
+// });
+window.addEventListener('click', (e) => {
+  if (e.target.classList.contains('modal')) {
+    e.target.style.display = "none";
+  }
 });

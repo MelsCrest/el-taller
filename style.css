@@ -386,17 +386,24 @@ p{
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 30; /* Sit on top */
-  padding-top: 155px; /* Location of the box */
+  display: none; 
+  position: fixed; 
+  z-index: 30; 
+  padding-top: 94px; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+/*media queries - workshops section*/
+/*tablet*/
+@media (width>767px){
+  .modal{
+    padding-top: 155px; 
+  }
 }
 
 /* Modal Content */
@@ -405,7 +412,14 @@ p{
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 100%;
+}
+/*media queries - workshops section*/
+/*tablet*/
+@media (width>767px){
+  .modal-content {
+    width: 80%;
+  }
 }
 /* Content */
 .js-class-name:hover, .js-class-name:focus{
@@ -414,17 +428,24 @@ p{
   font-size: 1.7rem;
   cursor: pointer;
 }
-span{
+.arrow{
   display: inline-block;
+  transition: transform 0.3s ease;
+}
+.arrow.rotated{
   transform: rotate(90deg);
 }
-.down, .down-po, .down-ch{
-  transform: rotate(0deg);
-}
-.paint-article, .pottery-article, .children-article{
+.modal-article{
   margin: 0 auto;
   padding-bottom: 20px;
-  width: 70%;
+  width: 90%;
+}
+/*media queries - workshops section*/
+/*tablet*/
+@media (width>767px){
+  .modal-article {
+    width: 70%;
+  }
 }
 .title-classes-article{
   text-align: left;
@@ -434,6 +455,13 @@ span{
 .schedule{
   padding-top: 20px;
   font-weight: 500;
+}
+.schedule-time{
+  font-family: var(--tertiary-font);
+  font-size: 1.5rem;
+}
+.schedule-time li{
+  padding-top: 5px;
 }
 /* The Close Button */
 .js-close {

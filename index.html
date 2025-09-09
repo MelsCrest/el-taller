@@ -51,54 +51,119 @@
       <hr class="decoration"/>
       <h3 class="section-subtitles">No te pierdas nuestros talleres y explora tu lado artístico. Disfruta de esta experiencia también en familia o con amig@s.</h3>
       <div class="article-container">
+        <!-- CLASSES -->
         <article class="workshop-article">
           <img src="./images/workshops/pexels-kampus-6023602.jpg" alt="persona moldeando pieza de arcilla blanca sobre una tabla de madera"/>
           <div class="text-container">
             <h2>Clases</h2>
             <p>Cerámica o pintura. ¡Atrévete a descubrir al artista que llevas dentro!</p>
           </div>
-          <button id="js-classesBtn">LEER MÁS</button>
+          <button class="js-readmore-btn" data-modal="js-modal-classes">LEER MÁS</button>
         </article>
-        <!--Classes info-->
-        <div id="js-modal" class="modal">
+        <!--Classes info - MODAL BOX-->
+        <div id="js-modal-classes" class="modal">
           <div class="modal-content">
             <span class="js-close">&times;</span>
             <h2>Clases</h2>
             <!-- PAINTING CLASSES-->
-            <h3 id="painting" class="js-class-name">Pintura <span class="down">&#62;</span></h3>
-            <article class="paint-article hidden">
+            <h3 class="js-class-name" data-target="paint-article">Pintura <span class="arrow">&#62;</span></h3>
+            <article class="paint-article modal-article hidden">
               <h3 class="title-classes-article">Clases de pintura para adult@s.</h3>
               <p>Aprenderás nuevas técnicas de dibujo y pintura que te permitirán crear tus propias obras. No es necesario tener conocimientos previos. Materiales no incluidos.</p>
               <p>Si no estás segur@ de poder asistir siempre a tu hora pregunta por nuestros BONOS.</p>
               <p class="schedule">HORARIOS</p>
+              <ul class="schedule-time">
+                <li>Lunes: 19 - 21h</li>
+                <li>Martes: 19 - 21h</li>
+                <li>Miércoles: 19 - 21h</li>
+                <li>Jueves: 19 - 21h</li>
+                <li>Viernes: 19 - 21h</li>
+              </ul>
             </article>
             <hr>
             <!-- POTTERY CLASSES-->
-            <h3 id="pottery" class="js-class-name">Cerámica <span class="down-po">&#62;</span></h3>
-            <article class="pottery-article hidden">
+            <h3 class="js-class-name" data-target="pottery-article">Cerámica <span class="arrow">&#62;</span></h3>
+            <article class="pottery-article modal-article hidden">
               <h3 class="title-classes-article">Clases de cerámica para adult@s.</h3>
               <p>Descubrirás distintas técnicas de construcción y decoración con las que poder construir tus propias piezas. No es necesario tener conocimientos previos. Materiales incluidos.</p>
               <p>Si no estás segur@ de poder asistir siempre a tu hora pregunta por nuestros BONOS.</p>
               <p class="schedule">HORARIOS</p>
+              <ul class="schedule-time">
+                <li>Lunes: 19 - 21h</li>
+                <li>Martes: 19 - 21h</li>
+                <li>Miércoles: 19 - 21h</li>
+                <li>Jueves: 19 - 21h</li>
+                <li>Viernes: 19 - 21h</li>
+              </ul>
             </article>
             <hr>
             <!-- CHILDREN CLASSES-->
-            <h3 id="children" class="js-class-name">Infantil <span class="down-ch">&#62;</span></h3>
-            <article class="children-article hidden">
+            <h3 class="js-class-name" data-target="children-article">Infantil <span class="arrow">&#62;</span></h3>
+            <article class="children-article modal-article hidden">
               <h3 class="title-classes-article">Clases de pintura para niñ@s.</h3>
-              <p>¡Las clases más divertidas del mundo! Los más peques aprenderán pintura o cerámica o ¡ambas cosas! Trabajando su psicomotricidad, reforzando su criterio personal y su autoestima nos convertiremos en pequeños artistas. Materiales no incluidos.</p>
+              <p>¡Las clases más divertidas del mundo! Los más peques aprenderán pintura o cerámica o ¡ambas cosas! Trabajando su psicomotricidad, reforzando su criterio personal y su autoestima nos convertiremos en pequeños artistas. Materiales incluidos.</p>
               <p class="schedule">HORARIOS</p>
+              <ul class="schedule-time">
+                <li>Lunes: 19 - 21h</li>
+                <li>Martes: 19 - 21h</li>
+                <li>Miércoles: 19 - 21h</li>
+                <li>Jueves: 19 - 21h</li>
+                <li>Viernes: 19 - 21h</li>
+              </ul>
             </article>
           </div>
         </div>
+        <!-- WEEKENDS -->
         <article class="workshop-article">
           <img src="./images/workshops/pexels-asadphoto-30225360.jpg" alt="taller de pintura de cerámica en familia"/>
           <div class="text-container">
             <h2>Fin de semana</h2>
             <p>Cumpleaños, planes con amigos, días especiales... Celebralo con nosotras.</p>
           </div>
-          <button>LEER MÁS</button>
+          <button class="js-readmore-btn" data-modal="js-modal-weekend">LEER MÁS</button>
         </article>
+        <!--Workshops info - MODAL BOX-->
+        <div id="js-modal-weekend" class="modal">
+          <div class="modal-content">
+            <span class="js-close">&times;</span>
+            <h2>Fin de semana</h2>
+            <!-- POTTER'S WHEEL-->
+            <h3 class="js-class-name" data-target="wheel-article">Torno <span class="arrow">&#62;</span></h3>
+            <article class="wheel-article modal-article hidden">
+              <h3 class="title-classes-article">Clases de pintura para adult@s.</h3>
+              <p>Aprenderás nuevas técnicas de dibujo y pintura que te permitirán crear tus propias obras. No es necesario tener conocimientos previos. Materiales no incluidos.</p>
+            </article>
+            <hr>
+            <!-- PAINT YOUR MUG-->
+            <h3 class="js-class-name" data-target="mug-article">Pinta tu taza <span class="arrow">&#62;</span></h3>
+            <article class="mug-article modal-article hidden">
+              <h3 class="title-classes-article">Clases de cerámica para adult@s.</h3>
+              <p>Descubrirás distintas técnicas de construcción y decoración con las que poder construir tus propias piezas. No es necesario tener conocimientos previos. Materiales incluidos.</p>
+            </article>
+            <hr>
+            <!-- CREATE YOUR PIECE-->
+            <h3 class="js-class-name" data-target="piece-article">Crea tu pieza <span class="arrow">&#62;</span></h3>
+            <article class="piece-article modal-article hidden">
+              <h3 class="title-classes-article">Clases de pintura para niñ@s.</h3>
+              <p>¡Las clases más divertidas del mundo! Los más peques aprenderán pintura o cerámica o ¡ambas cosas! Trabajando su psicomotricidad, reforzando su criterio personal y su autoestima nos convertiremos en pequeños artistas. Materiales no incluidos.</p>
+            </article>
+            <hr>
+            <!-- CRISTALLICED-->
+            <h3 class="js-class-name" data-target="crystal-article">Cristalizado <span class="arrow">&#62;</span></h3>
+            <article class="crystal-article modal-article hidden">
+              <h3 class="title-classes-article">Clases de pintura para niñ@s.</h3>
+              <p>¡Las clases más divertidas del mundo! Los más peques aprenderán pintura o cerámica o ¡ambas cosas! Trabajando su psicomotricidad, reforzando su criterio personal y su autoestima nos convertiremos en pequeños artistas. Materiales no incluidos.</p>
+            </article>
+            <hr>
+            <!-- SPECIAL WORKSHOPS-->
+            <h3 class="js-class-name" data-target="special-article">Talleres especiales <span class="arrow">&#62;</span></h3>
+            <article class="special-article modal-article hidden">
+              <h3 class="title-classes-article">Clases de pintura para niñ@s.</h3>
+              <p>¡Las clases más divertidas del mundo! Los más peques aprenderán pintura o cerámica o ¡ambas cosas! Trabajando su psicomotricidad, reforzando su criterio personal y su autoestima nos convertiremos en pequeños artistas. Materiales no incluidos.</p>
+            </article>
+          </div>
+        </div>
+        <!-- CAMPS -->
         <article class="workshop-article">
           <img src="./images/workshops/pexels-pavel-danilyuk-8422175.jpg" alt="niños haciendo manualidades alrededor de una mesa"/>
           <div class="text-container">
@@ -107,6 +172,7 @@
           </div>
           <button>LEER MÁS</button>
         </article>
+        <!-- TEAM BUILDING -->
         <article class="workshop-article">
           <img src="./images/workshops/pexels-fauxels-3184423.jpg" alt="grupo de personas en circulo juntado las manos al centro"/>
           <div class="text-container">
